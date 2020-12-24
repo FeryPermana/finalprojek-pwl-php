@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Space Grotesk", sans-serif;
+}
+.page {
+  display: grid;
+  margin: 50px 260px 50px 100px;
+  color: orange;
+  font-size: 48px;
+  font-weight: bold;
+  border-bottom: 5px solid orange;
+}
+.detail {
+  display: grid;
+  grid-template-columns: 0.5fr 4.5fr 6fr 1fr;
+  min-height: 400px;
+}
+
+.detail .style {
+  margin-top: 195px;
+  float: right;
+}
+
+.detail .product .ractangle1 {
+  background: #f3f3f4;
+  width: 365px;
+  height: 428px;
+  margin: 50px;
+  border-radius: 10px;
+  float: right;
+  display: grid;
+  align-self: center;
+  padding: 30px;
+}
+
+.detail .product .ractangle1 img {
+  padding: 20% 0%;
+  width: 100%;
+}
+
+.detail .description .ractangle2 {
+  background: #f3f3f4;
+  width: 685px;
+  height: 428px;
+  margin: 50px 50px 0px 50px;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.detail .description .ractangle2 .name {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.detail .description .ractangle2 p {
+  text-align: justify;
+}
+
+.detail .description .ractangle2 button {
+  border: none;
+  border-radius: 4px;
+  width: 70px;
+  height: 30px;
+  background: orange;
+  font-size: 17px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.detail .description .ractangle2 select {
+  width: 170px;
+  height: 30px;
+}
+.detail .description button {
+  border: none;
+  padding: 0px 3px;
+  border-radius: 4px;
+  height: 30px;
+  font-size: 17px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.detail .description .pesan {
+  margin-left: 50px;
+  width: 70px;
+  background: #e34d4c;
+}
+.detail .description .add {
+  margin-left: 30px;
+  width: 120px;
+  background: orange;
+}
+
+/* product */
+.product {
+  margin: 36px 80px 0px 80px;
+  background: #f3f3f4;
+  border-radius: 10px;
+}
+.product img {
+  padding: 20px;
+  width: 19%;
+}
+.card2 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  min-height: 100px auto;
+}
+
+.card2 .card-item2 {
+  min-height: 350px;
+  align-content: center;
+  padding-top: 25px;
+}
+
+.card2 .ractangle {
+  margin-left: 20px;
+  margin-right: 20px;
+  position: absolute;
+  color: whitesmoke;
+  width: 200px;
+  height: 233px;
+  background: #000000;
+  opacity: 70%;
+  border-radius: 10px;
+  padding-top: 10px;
+}
+
+.card2 .card-item2 img {
+  margin-left: 23%;
+  margin-top: 12%;
+  padding: 0;
+  position: relative;
+  width: 60%;
+}
+
+.card2 .card-item2 .ractangle .display {
+  border-bottom: 4px whitesmoke solid;
+}
+.card2 .card-item2 .ractangle .display h3 {
+  padding-top: 75%;
+  padding-left: 18px;
+}
+
+.card2 .card-item2 .ractangle a {
+  float: right;
+  border: none;
+  padding: 10px;
+  color: orange;
+  font-size: 16px;
+  font-weight: bolder;
+  text-decoration: none;
+}

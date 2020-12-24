@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* navbar */
+
+.jumbotron {
+  background-image: url("../assets/background/5.png");
+  display: grid;
+  grid-template-columns: 57% 43%;
+  grid-auto-rows: minmax(600px, auto);
+  margin-left: 15.5px;
+}
+
+.jumbotron .frame {
+  width: 370px;
+  margin-top: 30px;
+  margin-left: 200px;
+  position: absolute;
+}
+
+.jumbotron .display {
+  margin-left: 250px;
+  margin-top: 100px;
+  padding: 20px;
+  width: 570px;
+  position: relative;
+}
+
+.jumbotron .style {
+  margin-left: 80px;
+  width: 60px;
+}
+
+.jumbotron .typo img {
+  margin-top: 140px;
+  width: 70%;
+}
+.jumbotron .typo {
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+}
+
+.jumbotron .typo .index-text {
+  padding-right: 200px;
+  font-size: medium;
+  text-align: justify;
+}
+
+.jumbotron .typo button {
+  background-color: transparent;
+  border: 0;
+  font-size: large;
+  color: whitesmoke;
+  border-bottom: 2px solid whitesmoke;
+}
+
+/* section fiture */
+
+.fiture {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr 2fr);
+  grid-auto-columns: minmax(100px, auto);
+  margin-left: 368px;
+  grid-gap: 1rem !important;
+  background: #c4c4c4;
+  padding: 25px;
+}
+.fiture img {
+  background: #c4c4c4;
+  margin: 20px;
+  width: 80px;
+}
+
+/* review section */
+
+.review {
+  display: flex;
+  margin: 80px 0px 0px 80px;
+  background: tomato;
+  margin-bottom: 30px;
+}
+
+.video {
+  min-height: 700px;
+  min-width: 300px;
+  flex-grow: 4;
+  position: relative;
+}
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.creator {
+  flex-grow: 1;
+  display: grid;
+}
+
+.creator .name {
+  background-image: url("../assets/background/last\ profil.png");
+  width: 100%;
+  height: 73%;
+}
+.name .name_creator {
+  color: whitesmoke;
+  font-size: xx-large;
+  font-weight: bolder;
+  padding: 20px;
+}
+
+.name img {
+  padding-top: 20px;
+  width: 60%;
+  padding-left: 20px;
+}
+
+.name ul {
+  color: whitesmoke;
+  padding: 40px 0px 0px 50px;
+}
+
+.name .sosmet {
+  padding: 50px 0px 0px 10px;
+}
+.name .sosmet img {
+  width: 10%;
+}
+.creator .gear {
+  background-image: url("../assets/background/review.png");
+  width: 100%;
+  height: 100%;
+}
+
+/* TOP */
+.top .title {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 80px 0px 80px;
+}
+
+.top .title .left img {
+  width: 37%;
+}
+
+.top .title .right img {
+  width: 10%;
+  float: right;
+  padding-top: 40px;
+}
+.top .selers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px 80px 20px 80px;
+  grid-gap: 40px;
+  min-height: 600px auto;
+}
+
+.top .selers .card {
+  float: left;
+  min-height: 350px;
+  align-content: center;
+  padding-left: 10%;
+  padding-top: 25px;
+}
+
+.top .selers .card .ractangle {
+  position: absolute;
+  color: whitesmoke;
+  width: 252px;
+  height: 263px;
+  background: #000000;
+  opacity: 70%;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.top .selers .card img {
+  margin-left: 47px;
+  position: relative;
+  width: 84%;
+}
+
+.top .selers .card .ractangle .display {
+  border-bottom: 4px whitesmoke solid;
+}
+.top .selers .card .ractangle .display h2 {
+  margin-top: 70%;
+  margin-left: 5%;
+}
+
+.top .selers .card .ractangle a {
+  float: right;
+  border: none;
+  padding: 10px;
+  color: orange;
+  font-size: 18px;
+  font-weight: bolder;
+  background-color: transparent;
+}
+
+.top .selers .miroles {
+  background: yellowgreen;
+}
+
+.top .selers .drone {
+  background-color: blueviolet;
+}
+
+.top .downer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 80px 0px 80px;
+}
+
+/* description section */
+
+.description {
+  display: grid;
+  margin: 30px 80px 0 80px;
+  background-color: #4d4d4d;
+  color: whitesmoke;
+  border-radius: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  align-self: center;
+  align-content: space-around;
+  padding: 20px;
+  grid-gap: 40px;
+}
+
+.description .container {
+  min-height: 300px auto;
+  padding: 20px;
+  text-align: justify;
+}
+
+.description .container img {
+  width: 60%;
+}
+
+.description .container .payman1 {
+  padding-top: 40px;
+  width: 100%;
+}
+
+.description .container .payman2 {
+  width: 100%;
+}
+
+.description .container .my-footer {
+  margin-left: 65px;
+}
+/* description */

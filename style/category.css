@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.carousel {
+  background: #c4c4c4;
+  height: 500px;
+  margin-bottom: 100px;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+.carousel img {
+  box-sizing: content-box;
+  width: 1200px;
+  padding-left: 170px;
+  padding-top: 60px;
+}
+.best {
+  margin: 80px;
+  background: #f3f3f4;
+  border-radius: 10px;
+  margin: 0px 80px 0px 80px;
+}
+.best img {
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 14%;
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 9px;
+  min-height: 600px auto;
+}
+
+.card .card-item {
+  min-height: 350px;
+  align-content: center;
+  padding-top: 25px;
+}
+
+.card .ractangle {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 200px;
+  position: absolute;
+  color: whitesmoke;
+  width: 210px;
+  height: 253px;
+  background: #000000;
+  opacity: 70%;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+
+.card .card-item img {
+  margin-left: 29px;
+  padding: 0;
+  position: relative;
+  width: 80%;
+}
+
+.card .card-item .ractangle .display {
+  border-bottom: 4px whitesmoke solid;
+}
+.card .card-item .ractangle .display h2 {
+  margin-top: 70%;
+  margin-left: 5%;
+}
+
+/* .card .card-item .ractangle button {
+  float: right;
+  border: none;
+  padding: 10px;
+  color: orange;
+  font-size: 18px;
+  font-weight: bolder;
+  background-color: transparent;
+} */
+
+.card .card-item .ractangle a {
+  float: right;
+  color: orange;
+  font-size: 18px;
+  font-weight: bolder;
+  text-decoration: none;
+  margin: 10px;
+}
+/* product */
+.product {
+  margin: 36px 80px 0px 80px;
+  background: #f3f3f4;
+  border-radius: 10px;
+}
+.product img {
+  padding: 20px;
+  width: 19%;
+}
+.card2 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  min-height: 100px auto;
+}
+
+.card2 .card-item2 {
+  min-height: 350px;
+  align-content: center;
+  padding-top: 25px;
+}
+
+.card2 .ractangle {
+  margin-left: 20px;
+  margin-right: 20px;
+  position: absolute;
+  color: whitesmoke;
+  width: 200px;
+  height: 233px;
+  background: #000000;
+  opacity: 70%;
+  border-radius: 10px;
+  padding-top: 10px;
+}
+
+.card2 .card-item2 img {
+  margin-left: 23%;
+  margin-top: 12%;
+  padding: 0;
+  position: relative;
+  width: 60%;
+}
+
+.card2 .card-item2 .ractangle .display {
+  border-bottom: 4px whitesmoke solid;
+}
+.card2 .card-item2 .ractangle .display h3 {
+  padding-top: 75%;
+  padding-left: 18px;
+}
+
+.card2 .card-item2 .ractangle a {
+  float: right;
+  border: none;
+  padding: 10px;
+  color: orange;
+  font-size: 16px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+/* add section */
+
+.add {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.add .card-oval {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  min-height: 80px;
+  grid-gap: 50px;
+  margin: 10px;
+}
+
+.add .card-oval .banner2 {
+  padding-top: 20px;
+}
+
+.add .card-oval-item {
+  min-width: 200px;
+  min-height: 800px auto;
+  background: #c70000;
+  opacity: 70%;
+  border-radius: 4px;
+  display: flex;
+}
+
+.add .card-oval-item .left {
+  padding: 10px;
+  background-color: teal;
+}
+.add .card-oval-item .left img {
+  width: 80%;
+}
+
+.add .card-oval-item .right {
+  width: 190%;
+  padding: 10px;
+  background-color: teal;
+}
+
+.add .card-oval-item .right h5 {
+  color: whitesmoke;
+}
