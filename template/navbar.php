@@ -41,8 +41,8 @@
             <?php endif ?>
         </ul>
         <div class="search-form">
-            <form action="">
-                <input type="text" placeholder="Search K Arta" />
+            <form action="pencarian.php" method="get">
+                <input type="text" placeholder="Search K Arta" name="keyword" />
             </form>
         </div>
         <a href="" class="close"><i class="fa fa-times"></i></a>

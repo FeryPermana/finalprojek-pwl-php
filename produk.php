@@ -22,7 +22,7 @@ include 'koneksi.php';
     <img src="assets/banner/banner DSLR !.png" alt="">
   </section>
   <section class="best">
-    <img src="assets/background/TOP 5.png" alt="">
+    <h1 style="font-size: 80px; color:black; text-align:center">Produk</h1>
     <div class="card">
       <?php $ambil = $koneksi->query("SELECT * FROM produk"); ?>
       <?php while ($produk = $ambil->fetch_assoc()) { ?>

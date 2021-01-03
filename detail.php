@@ -26,6 +26,9 @@ $detail = $ambil->fetch_assoc();
   <link rel="stylesheet" href="style/dropdown.css" />
   <link rel="stylesheet" href="style/footerd.css" />
   <script src="https://use.fontawesome.com/99cdecee55.js"></script>
+  <style>
+
+  </style>
 </head>
 
 <body>
@@ -48,7 +51,7 @@ $detail = $ambil->fetch_assoc();
           </div>
           <br />
           <p>
-          <p><?= $detail["deskripsi_produk"]; ?></p>
+            <?= $detail["deskripsi_produk"]; ?>
           </p>
           <br />
           <button class="price">Price</button>
