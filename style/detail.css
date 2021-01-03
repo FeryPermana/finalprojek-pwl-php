@@ -24,6 +24,9 @@
   float: right;
 }
 
+.detail .product {
+}
+
 .detail .product .ractangle1 {
   background: #f3f3f4;
   width: 365px;
@@ -39,6 +42,9 @@
 .detail .product .ractangle1 img {
   padding: 20% 0%;
   width: 100%;
+}
+
+.detail .description {
 }
 
 .detail .description .ractangle2 {
@@ -92,6 +98,7 @@
 .detail .description .add {
   margin-left: 30px;
   width: 120px;
+  padding-right: 100px;
   background: orange;
 }
 

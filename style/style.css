@@ -5,9 +5,6 @@
   overflow-x: hidden;
   font-family: "Space Grotesk", sans-serif;
 }
-
-/* navbar */
-
 .jumbotron {
   background-image: url("../assets/background/5.png");
   display: grid;
@@ -45,7 +42,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-.jumbotron .typo .index-text {
+.jumbotron .typo p {
   padding-right: 200px;
   font-size: medium;
   text-align: justify;
@@ -196,7 +193,7 @@
   margin-left: 5%;
 }
 
-.top .selers .card .ractangle a {
+.top .selers .card .ractangle button {
   float: right;
   border: none;
   padding: 10px;
@@ -206,6 +203,15 @@
   background-color: transparent;
 }
 
+.top .selers .card .ractangle a {
+  float: right;
+  border: none;
+  padding: 10px;
+  color: orange;
+  font-size: 18px;
+  font-weight: bolder;
+  text-decoration: none;
+}
 .top .selers .miroles {
   background: yellowgreen;
 }
@@ -221,40 +227,3 @@
 }
 
 /* description section */
-
-.description {
-  display: grid;
-  margin: 30px 80px 0 80px;
-  background-color: #4d4d4d;
-  color: whitesmoke;
-  border-radius: 10px;
-  grid-template-columns: repeat(3, 1fr);
-  align-self: center;
-  align-content: space-around;
-  padding: 20px;
-  grid-gap: 40px;
-}
-
-.description .container {
-  min-height: 300px auto;
-  padding: 20px;
-  text-align: justify;
-}
-
-.description .container img {
-  width: 60%;
-}
-
-.description .container .payman1 {
-  padding-top: 40px;
-  width: 100%;
-}
-
-.description .container .payman2 {
-  width: 100%;
-}
-
-.description .container .my-footer {
-  margin-left: 65px;
-}
-/* description */

@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+.container {
+  margin: 80px;
+  min-width: 100px auto;
+  min-height: 50px;
+  background-color: #f3f3f4;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+}
+.container .right {
+  padding-left: 50px;
+}
+.container ol {
+  padding: 20px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+.container ol li {
+  padding: 3px;
+}
+/* product */
+.product {
+  margin: 36px 80px 0px 80px;
+  background: #f3f3f4;
+  border-radius: 10px;
+}
+.product img {
+  padding: 20px;
+  width: 19%;
+}
+.card2 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  min-height: 100px auto;
+}
+
+.card2 .card-item2 {
+  min-height: 350px;
+  align-content: center;
+  padding-top: 25px;
+}
+
+.card2 .ractangle {
+  margin-left: 20px;
+  margin-right: 20px;
+  position: absolute;
+  color: whitesmoke;
+  width: 200px;
+  height: 233px;
+  background: #000000;
+  opacity: 70%;
+  border-radius: 10px;
+  padding-top: 10px;
+}
+
+.card2 .card-item2 img {
+  margin-left: 23%;
+  margin-top: 12%;
+  padding: 0;
+  position: relative;
+  width: 60%;
+}
+
+.card2 .card-item2 .ractangle .display {
+  border-bottom: 4px whitesmoke solid;
+}
+.card2 .card-item2 .ractangle .display h3 {
+  padding-top: 75%;
+  padding-left: 18px;
+}
+
+.card2 .card-item2 .ractangle a {
+  float: right;
+  border: none;
+  padding: 10px;
+  color: orange;
+  font-size: 16px;
+  font-weight: bolder;
+  text-decoration: none;
+}

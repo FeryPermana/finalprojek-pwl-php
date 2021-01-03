@@ -1,15 +1,12 @@
-<?php
-if (!isset($_SESSION)) {
-    session_start();
-}
-?>
-<nav class="wrapper">
-    <div class="logo">
+<nav>
+    <div class="menu">
         <img src="../assets/logo.png" alt="" />
-    </div>
-    <div class="nav">
-        <ul class="nav-links">
-            <li><a href="./index.php">Home</a></li>
+        <ul>
+            <li>
+                <href href="#"></href>
+            </li>
+            <li><a href="index.php" class="menu-item">Home</a></li>
+            <li><a href="produk.php" class="menu-item">Produk</a></li>
             <?php
             $datajenisbarang = array();
             $ambil = $koneksi->query("SELECT * FROM jenis_produk");
@@ -18,25 +15,36 @@ if (!isset($_SESSION)) {
             }
             ?>
             <li class="dropdown">
-                <button class="dropbtn" onclick="myFunction()">Category
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content" id="myDropdown">
+                <button onclick="myFunction()" class="dropbtn">Kategory</button>
+                <div id="myDropdown" class="dropdown-content">
                     <?php foreach ($datajenisbarang as $key => $value) : ?>
-                        <a href="category.php?category&id=<?= $value["id_jenis_produk"] ?>"><?= $value["nama_jenis_produk"]; ?></a>
+                        <a href="kategory.php?kategory&id=<?= $value["id_jenis_produk"] ?>"><?= $value["nama_jenis_produk"]; ?></a>
                     <?php endforeach ?>
                 </div>
             </li>
-            <li><a href="#">About</a></li>
-            <li class="login"><a href="./index.php">Login</a></li>
-            <li class="register"><a href="./index.php">Register</a></li>
+
+            <li><a href="about.php" class="menu-item">About</a></li>
+            <li>
+                <a href="#" id="search"><i class="fa fa-search"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-shopping-basket"></i></a>
+            </li>
+            <?php if (isset($_SESSION["pelanggan"])) : ?>
+                <li>
+                    <a href="logout.php" class="menu-item">Logout</a>
+                </li>
+            <?php else : ?>
+                <li>
+                    <a href="login.php" class="menu-item">Login</a>
+                </li>
+            <?php endif ?>
         </ul>
-    </div>
-    <div class="icon">
-        <form>
-            <input class="search" type="text" placeholder="Cari..." required>
-            <input class="button" type="button" value="Cari">
-        </form>
-        <!-- <img src="./assets/nav/trolley-cart.png" alt="" /> -->
+        <div class="search-form">
+            <form action="">
+                <input type="text" placeholder="Search K Arta" />
+            </form>
+        </div>
+        <a href="" class="close"><i class="fa fa-times"></i></a>
     </div>
 </nav>

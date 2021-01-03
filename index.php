@@ -1,6 +1,6 @@
 <?php
 session_start();
-include './koneksi.php';
+include 'koneksi.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,15 +9,15 @@ include './koneksi.php';
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home Page</title>
-  <link rel="stylesheet" href="style/navbar.css">
-  <link rel="stylesheet" href="style/style.css">
-  <link rel="stylesheet" href="style/dropdown.css">
-  <link rel="stylesheet" href="style/footer.css">
+  <link rel="stylesheet" href="style/navbar.css" />
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="style/footer.css" />
+  <link rel="stylesheet" href="style/dropdown.css" />
+  <script src="https://use.fontawesome.com/99cdecee55.js"></script>
 </head>
 
 <body>
   <?php include('template/navbar.php') ?>
-
   <main>
     <section class="jumbotron">
       <div class="blue">
@@ -27,12 +27,12 @@ include './koneksi.php';
       </div>
       <div class="typo">
         <img src="assets/logo 2.png" alt="" />
-        <p class="index-text">
+        <p>
           Rental camera Yogyakarta jasa pelayanan sewa Camera termurah dan
           Terpercaya,siap melayani anda 24 jam demi kepuasan pelanggan.
         </p>
         <br /><br /><br />
-        <button>Lihat Selengkapnya > ></button>
+        <button><a href="produk.php" class="selengkapnya" style="color: white;">Lihat Selengkapnya > ></a> </button>
       </div>
     </section>
     <!-- fiture -->
@@ -103,7 +103,7 @@ include './koneksi.php';
         </div>
       </div>
       <class class="selers">
-        <?php $ambil = $koneksi->query("SELECT * FROM produk"); ?>
+        <?php $ambil = $koneksi->query("SELECT * FROM produk LIMIT 4"); ?>
         <?php while ($produk = $ambil->fetch_assoc()) { ?>
           <div class="card">
             <div class="ractangle">
@@ -112,14 +112,15 @@ include './koneksi.php';
               </div>
               <a href="detail.php?id=<?= $produk['id_produk'] ?>">MORE</a>
             </div>
-            <img src="foto_produk/<?= $produk['foto_produk']; ?>" height="50%" />
+            <img src="foto_produk/<?= $produk['foto_produk']; ?>" alt="" />
           </div>
         <?php } ?>
       </class>
+
       </div>
       <div class="downer">
         <div class="left">
-          <img src="../assets/background/style3.png" alt="" />
+          <img src="assets/background/style3.png" alt="" />
         </div>
         <div class="right">
         </div>
@@ -127,56 +128,9 @@ include './koneksi.php';
     </section>
 
   </main>
-  <section class="description">
-    <div class="container">
-      <img src="../assets/logo 3.png" alt="">
-    </div>
-    <div class="container"></div>
-    <div class="container"></div>
-    <div class="container">
-      <p>Rental camera Yogyakarta jasa pelayanan sewa Camera termurah dan Terpercaya,siap melayani anda 24 jam demi kepuasan pelanggan.</p>
-    </div>
-    <div class="container">
-      <h3>BUSINES HOURS</h3>
-      <br>
-      <p>Layanan kami buka selama 24 jam dalam Seminggu. </p>
-      <br>
-      <br>
-      <p>Pembayaran:</p>
-      <table>
-        <tr>
-          <td><img src="../assets/fiture/Bank Central Asia BCA_preview_rev_1 1.png" alt="" class="payman1"></td>
-          <td><img src="../assets/fiture/logo-bank-mandiri-coreldraw 1.png" alt="" class="payman2"></td>
-        </tr>
-      </table>
-      <br>
-      <br>
-      <br>
-      <h3 class="my-footer">2016-2020 &copy; LateSleeps</h3>
-    </div>
-    <div class="container">
-      <h3>HUBUNGI KAMI</h3>
-      <br>
-      <table>
-        <tr>
-          <td>Alamat </td>
-          <td>: Jl.Diponegoro, No.56, Sleman, Jogja</td>
-        </tr>
-        <tr>
-          <td>No HP/WA</td>
-          <td>: 085726564257</td>
-        </tr>
-        <tr>
-          <td>Email</td>
-          <td>: ewacamera2@gmail.com</td>
-        </tr>
-      </table>
-    </div>
-  </section>
-  <footer>
-    <h3>2016-2020 &copy; LateSleeps</h3>
-  </footer>
-  <?php include('template/dropdown.php') ?>
+  <?php include('template/footer.php') ?>
+  <?php include('template/javascript.php') ?>
+  <?php include('template/jsdropdown.php') ?>
 </body>
 
 </html>

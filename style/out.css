@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.container {
+  display: flex;
+  margin: 20px 80px;
+  border-radius: 10px;
+  background: #f3f3f4;
+  height: 200px;
+  max-height: 200px;
+}
+
+.container .card {
+  display: flex;
+  padding: 20px;
+}
+
+.container .card .cek {
+  padding: 20px;
+  width: 70px;
+}
+
+.container .card .cek .ceklist {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  background-color: orange;
+}
+.container .card .image {
+  background: #fff;
+  border-radius: 10px;
+  width: 200px;
+  max-width: 300px;
+  padding: 10px;
+}
+.container .card .image img {
+  width: 170px;
+}
+
+.description {
+  padding: 20px;
+}
+.description .price {
+  color: orange;
+}
+
+.kali {
+  padding: 58px;
+  padding-left: 100px;
+  font-size: 23px;
+  font-weight: bold;
+}
+.time {
+  padding: 60px;
+  padding-left: 100px;
+}
+
+.container2 {
+  display: flex;
+  margin: 20px 80px;
+  border-radius: 10px;
+  background: #f3f3f4;
+  height: 110px;
+  max-height: 200px;
+  align-items: center;
+}
+.container2 .cek {
+  padding: 10px;
+  width: 70px;
+}
+.container2 .cek .ceklist {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  margin-left: 30px;
+  background-color: orange;
+}
+.container2 h3 {
+  padding: 15px;
+  opacity: 0.6;
+  float: right;
+}
+.container2 h2 {
+  color: red;
+  margin: 10px;
+  float: right !important;
+}
+.container2 p {
+  margin-left: 170px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.container2 p .total {
+  color: orange;
+  padding-left: 20px;
+  font-size: 35px;
+}
+
+.container3 {
+  display: flex;
+  margin: 20px 80px;
+  border-radius: 10px;
+  background: #f3f3f4;
+  height: 110px;
+  max-height: 200px;
+}
+
+.out {
+  border: none;
+  color: #fff;
+  margin-left: 50px;
+  padding: 0px 40px;
+  text-align: center;
+  height: 40px;
+  background: #ff4b2b;
+  border-radius: 5px;
+}

@@ -1,12 +1,39 @@
-footer {
-  background: #4d4d4d;
-  opacity: 80%;
-  height: 100%;
-  padding: 0px;
-  display: flex;
-  margin: 80px;
-}
-footer h3 {
-  color: whitesmoke;
-  margin-left: 40%;
-}
+.description {
+    display: grid;
+    margin: 30px 80px 0 80px;
+    background-color: #4d4d4d;
+    color: whitesmoke;
+    border-radius: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    align-self: center;
+    align-content: space-around;
+    padding: 20px;
+    grid-gap: 40px;
+    }
+
+    .description .container {
+    min-height: 300px auto;
+    padding: 20px;
+    text-align: justify;
+    }
+
+    .description .container h3{
+      
+    } 
+
+    .description .container img {
+    width: 60%;
+    }
+
+    .description .container .payman1 {
+    padding-top: 40px;
+    width: 100%;
+    }
+
+    .description .container .payman2 {
+    width: 100%;
+    }
+
+    .description .container .my-footer {
+    margin-left: 65px;
+    }

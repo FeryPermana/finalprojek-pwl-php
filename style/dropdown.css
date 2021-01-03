@@ -1,5 +1,4 @@
 .dropdown {
-  float: left;
   overflow: hidden;
 }
 
@@ -7,6 +6,7 @@
   cursor: pointer;
   font-size: 16px;
   border: none;
+  border-radius: 2em;
   outline: none;
   color: white;
   padding: 14px 16px;
@@ -18,32 +18,35 @@
 .navbar a:hover,
 .dropdown:hover .dropbtn,
 .dropbtn:focus {
-  background-color: #444343;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: #c4c4c4;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #444343;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  border-radius: 1.5em;
+  background-color: black;
+  min-width: 95px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.8);
 }
 
 .dropdown-content a {
   float: none;
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
+  text-align: center;
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #c4c4c4;
+  position: relative;
 }
 
 .show {
   display: block;
+  position: fixed;
+  color: white;
+  z-index: 1;
 }

@@ -30,7 +30,6 @@ if (!isset($_SESSION['admin'])) {
                     <td><?= $nomor++; ?></td>
                     <td><?= $pecah['nama_jenis_produk']; ?></td>
                     <td>
-                        <a href="index.php?halaman=hapusjenis&id=<?= $pecah['id_jenis_produk'] ?>" class="btn btn-danger">Hapus</a>
                         <a href="index.php?halaman=editjenis&id=<?= $pecah['id_jenis_produk'] ?>" class="btn btn-warning">Edit</a>
                     </td>
                 </tr>
